@@ -1,0 +1,77 @@
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+#header{
+  font-family: Lato;
+  color: black;
+  size: 7;
+}
+body{
+background-image:url('images/mountain2.jpg');
+background-repeat:no-repeat;
+background-attachment: fixed; 
+  background-size: cover;
+ background-size: 100% 100%;
+}
+.button{
+border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+border-radius: 12px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: black; 
+  color: white; 
+  border: 2px solid #008CBA;
+border-radius: 12px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button3{
+background-color: white;
+color:Black;
+border:2px solid red;
+border-radius: 12px;
+}
+.button3:hover{
+background-color:red;
+color:white;
+}

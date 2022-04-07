@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>{% block title %}{% endblock %}</title>
+	 <script >
+	window.onscroll = function() {myfunction()};
+
+	var navbar = document.getElementById("navbar")
+	var sticky = navbar.offsetTop;
+
+	function myfunction(){
+		if (window.pageYOoffset >= sticky)  {
+			navbar.classList.add("sticky")
+		}
+		else{
+			 navbar.classList.remove("sticky")
+		}
+	}
+
+</script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <style>
+        	body{
+        		background-image: url('pics.jpg');
+        		margin: 0;
+        		font-size: 28px;
+        		font-family: sans-serif;
+
+        	}
+        	html{
+        		max-width: 100%;
+        		overflow-x: hidden; 
+        	}
+        	.header{
+        		background-color: #E6E6FA;
+        		padding-top: 0px;
+        		padding-left: 0px;
+        		padding-right: 0px;
+        		padding-bottom: 30px;
+
+        	}
+        	#navbar{
+        		overflow: hidden;
+        		background-color: dodgerblue;
+        		
+
+        	}
+        	
+        	h1{
+        		font-family: sans-serif;
+        	}
+        </style>
+    </head>
+    <body>
+    	<div  class="header">
+    		<header>
+    			<div style="background-color: yellow; color: red; font-size: 15px; font-weight: bold;">
+    				Web App on Project1
+    			</div><br>
+    			<h5 class="nonetitle" style="color: #663399; padding-bottom: 5px;text-align: left;float: left;"><a href="/"> Oses Book Review</a></h5><br>
+    			<form action="/search" method="post" style="float: right;display: inline-block;line-height: 42px; padding-right: 14px; width: 20%;">
+    				<input class="search" type="text" name="k" placeholder="search..." autocomplete="off"><input type="submit" name="" style="width: 40%; background-color: #4CAF50; border:none;color: white;text-decoration: none;margin: 4px 2px;cursor: pointer;" value="search">
+    			</form>
+    		</header>
+    	</div>
+    	<nav>
+    	<div id="navbar">
+    		
+    	</div>
+    </nav>
+    		<h1>Best Of Book Reviews</h1>
+        <div>
+            {% block body %}
+            {% endblock %}
+        </div>
+
+	
+
+
+</body>
+</html>

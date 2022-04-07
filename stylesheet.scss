@@ -1,0 +1,55 @@
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#header {
+  width: $myWidth;
+} 
+text: {
+  align: center;
+  transform: uppercase;
+  overflow: hidden;
+}
+.button{
+border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  @extend .button;
+  color: black; 
+  border: 2px solid #4CAF50;
+border-radius: 12px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+@extend .button;
+  background-color: black; 
+  color: white; 
+  border: 2px solid #008CBA;
+border-radius: 12px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
